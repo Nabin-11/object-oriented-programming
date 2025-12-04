@@ -80,3 +80,4 @@ print(f"Are they equal? {int(5) == 5}")
 print(f"\nstr('hello') creates: {type(str('hello'))}")
 print(f"'hello' creates: {type('hello')}")
 print(f"Are they equal? {str('hello') == 'hello'}")
+#.  by copilot all of the abovebove code 
