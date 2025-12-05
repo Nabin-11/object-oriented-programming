@@ -18,26 +18,15 @@ class Library:
         self.quantity = quantity
 
         Library.books_collection.append(self)
-    
-class Book_management(Library):
-    def list_books(self):
-         for book in Library.book_collection:
-             print(f"""
-Book     : {book.name}
-code     : {book.name}
-Quantity : {book.name}
+    # using repr to list all the books. 
+    def __repr__(self):
+        return f"""
+Book          : {self.name}
+Book code     : {self.code}
+Book quantity : {self.quantity}
 
-""")
-
-
-    
-    
-    
-    
+"""
         
- 
-
-
 
 book1 = Library("Python Programming", 101, 5)
 book2 = Library("Data Science", 102, 3)
@@ -45,5 +34,4 @@ book3 = Library("Machine Learning", 103, 7)
 
 
 
-list = Book_management()
-list.list_books
+print(repr(Library.books_collection))
