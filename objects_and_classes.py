@@ -20,13 +20,11 @@ class Library:
         Library.books_collection.append(self)
     # using repr to list all the books. 
     def __repr__(self):
-        return f"""
-Book          : {self.name}
-Book code     : {self.code}
-Book quantity : {self.quantity}
+        # __repr__ should return a single-line, unambiguous representation
+        # Avoid embedding newlines here; printing a list calls repr() for
+        # each element, so newline characters will produce awkward output.
+        return f"Library('{self.name}', {self.code}, {self.quantity})"
 
-"""
-        
 
 book1 = Library("Python Programming", 101, 5)
 book2 = Library("Data Science", 102, 3)
@@ -34,4 +32,4 @@ book3 = Library("Machine Learning", 103, 7)
 
 
 
-print(repr(Library.books_collection))
+print(Library.books_collection)
