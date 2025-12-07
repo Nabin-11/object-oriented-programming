@@ -1,4 +1,4 @@
-name, code,quantity
-"Python Programming", 101, 5
-"Data Science", 102, 3
-"Machine Learning", 103, 7
+name,code,quantity
+"Python Programming",101,5
+"Data Science",102,3
+"Machine Learning",103,7
