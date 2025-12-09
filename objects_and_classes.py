@@ -22,26 +22,11 @@ class Library:
         # __repr__ should return a single-line, unambiguous representation
          return f"Library('{self.name}', {self.code}, {self.quantity})"
 
-    @classmethod
-    def instantiate_from_csv(cls):
-        
-        with open("Data.csv", 'r') as f:
-            reader = csv.DictReader(f)
-            lists = list(reader)
-    
-        for items in lists:
-            print(items)
+
+book1 = Library("Python Programming", 101, 5)
+book2 = Library("Data Science", 102, 3)
+book3 = Library("Machine Learning", 103, 7)
 
 
 
-
-# Examples (commented out):
-# book1 = Library("Python Programming", 101, 5)
-# book2 = Library("Data Science", 102, 3)
-# book3 = Library("Machine Learning", 103, 7)
-
-
-Library.instantiate_from_csv()
-# print(Library.books_collection)
-
-print("*" * 10)
+print(Library.books_collection)
