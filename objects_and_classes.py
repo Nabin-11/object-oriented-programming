@@ -30,5 +30,3 @@ book3 = Library("Machine Learning", 103, 7)
 
 
 print(Library.books_collection)
-
-print("hello world!")
