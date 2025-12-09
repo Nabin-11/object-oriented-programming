@@ -27,8 +27,4 @@ book1 = Library("Python Programming", 101, 5)
 book2 = Library("Data Science", 102, 3)
 book3 = Library("Machine Learning", 103, 7)
 
-
-
 print(Library.books_collection)
-
-print("hello world!")
